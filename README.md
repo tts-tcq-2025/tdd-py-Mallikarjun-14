@@ -33,3 +33,33 @@ Start Test-driven approach
 1. Write the smallest possible failing test: give input `"" assert output to be 0 ` .
 2. Write the minimum amount of code that'll make it pass.
 3. Refactor any assumptions, continue to pass this test. Do not add any code without a corresponding test.
+# StringCalculator
+
+
+
+
+
+
+A simple **String Calculator** implemented in Python following **Test-Driven Development (TDD)** principles.
+
+---
+
+## Features
+
+- Returns the sum of numbers given in a string input.
+- Supports:
+  - Empty string input (returns 0).
+  - An unknown amount of numbers.
+  - Comma `,` and newline `\n` as default delimiters.
+  - Custom delimiters specified in the format:  
+    `//[delimiter]\n[numbers…]`  
+    e.g. `"//;\n1;2"` returns `3`.
+  - Custom delimiters of any length using square brackets:  
+    e.g. `"//[***]\n1***2***3"` returns `6`.
+  - Multiple custom delimiters:  
+    e.g. `"//[*][%]\n1*2%3"` returns `6`.
+  - Throws an exception if negative numbers are included, listing all negatives.
+  - Ignores numbers greater than 1000.
+
+---
+   
